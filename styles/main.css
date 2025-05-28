@@ -54,6 +54,9 @@ form {
   margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.507);
   margin-left: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end) 1
 }
 
 .hero a {
@@ -63,6 +66,18 @@ form {
 .hero .contact-links {
   margin-left: 300px;
 }
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
 
 /*estilo-de-contactos*/
 
