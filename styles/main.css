@@ -23,7 +23,6 @@ form {
 
 /*hero-style*/
 
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -95,4 +94,48 @@ a:hover img {
 a img {
   height: 30px;
   width: 30px;
+}
+
+/*estilos-about-me*/
+
+.sobre-mi h1 {
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+
+.sobre-mi {
+  background-image: url(/assets/images/space-background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sobre-mi-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 10px;
+
+}
+
+.cart {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.137);
+  box-shadow: 4px 6px 9px -3px rgba(128, 128, 128, 0.137);
+}
+
+.cart h3 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+.cart p,
+li {
+  color: rgba(245, 245, 245, 0.523);
+  text-align: center;
 }
