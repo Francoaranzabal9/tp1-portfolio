@@ -67,6 +67,10 @@ form {
   margin-left: 300px;
 }
 
+a:hover img {
+  scale: 1.1;
+  transition: all 0.3 ease;
+}
 
 @keyframes typing {
   from {
