@@ -20,6 +20,13 @@ form {
   font-family: "Open Sans";
 }
 
+/*Header*/
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
 
 /*hero-style*/
 
