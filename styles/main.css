@@ -177,4 +177,10 @@ li {
 .proyecto a img {
   height: 200px;
   width: 400px;
+  filter: brightness(0.5);
+}
+
+.proyecto a:hover img {
+  scale: 1.02;
+  filter: brightness(1);
 }
