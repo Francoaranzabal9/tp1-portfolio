@@ -73,9 +73,8 @@ header {
   margin-left: 300px;
 }
 
-a:hover img {
+.hero a:hover img {
   scale: 1.1;
-  transition: all 0.3 ease;
 }
 
 @keyframes typing {
@@ -125,7 +124,6 @@ a img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 10px;
-
 }
 
 .cart {
@@ -145,4 +143,38 @@ a img {
 li {
   color: rgba(245, 245, 245, 0.523);
   text-align: center;
+}
+
+/* estilos proyectos y trabajos */
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-image: url(/assets/images/space-background.jpg);
+}
+
+.proyectos h1 {
+  margin-bottom: 70px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.proyecto {
+  background-color: rgba(128, 128, 128, 0.137);
+  box-shadow: 4px 6px 9px -3px rgba(128, 128, 128, 0.137);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.proyecto a {
+  white-space: nowrap;
+}
+
+.proyecto a img {
+  height: 200px;
+  width: 400px;
 }
