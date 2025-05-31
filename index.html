@@ -162,17 +162,28 @@
     <section id="contacto" class="contacto">
       <div class="contact-cont">
         <div class="contact-img">
-          <img src="" alt="">
+          <img src="/assets/images/img-portfolio.jpg" alt="Imagen decorativa">
         </div>
         <div class="contact-form">
+          <h4>¿Tenes un proyecto en mente?</h4>
+          <h5>Completa el formulario y veamos cómo podemos trabajar juntos</h5>
           <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre">
-            <label for="apellidos">Apellido</label>
-            <input type="text" id="apellidos" name="apellidos">
-            <label for="email">email</label>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="" id=""></textarea>
+            <div class="nombre-apellido-cont">
+              <p>Nombre*</p>
+              <label for="nombre"></label>
+              <input type="text" id="nombre" name="nombre">
+              <label for="apellidos"></label>
+              <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div class="email-cont">
+              <label for="email">Email*</label>
+              <input class="email" type="email" id="email" name="email">
+            </div>
+            <div class="text-area-cont">
+              <label for="mensaje">Mensaje*</label>
+              <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
+            <button class="form-button" type="submit">Enviar</button>
           </form>
         </div>
       </div>
