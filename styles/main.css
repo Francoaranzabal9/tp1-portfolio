@@ -364,6 +364,7 @@ textarea {
 
 @media (max-width: 880px) {
 
+  /* seccion hero */
   .hero h1 {
     margin-left: 100px;
   }
@@ -380,6 +381,8 @@ textarea {
     margin-left: 100px;
   }
 
+  /* seccion proyectos */
+
   .proyecto a img {
     height: 150px;
     width: 250px;
@@ -393,6 +396,8 @@ textarea {
     font-size: 30px;
   }
 
+  /* seccion habilidades */
+
   .habilidades-cont {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -404,6 +409,8 @@ textarea {
     font-size: 40px;
   }
 
+  /* seccion contacto */
+
   .contact-img {
     display: flex;
     justify-content: center;
@@ -414,6 +421,8 @@ textarea {
 }
 
 @media (max-width: 480px) {
+
+  /* seccion hero */
 
   .hero h1 {
     margin-left: 0;
@@ -433,6 +442,8 @@ textarea {
   .hero .contact-links {
     margin-left: 0px;
   }
+
+  /* seccion about me */
 
   .sobre-mi-cont {
     display: grid;
@@ -454,6 +465,8 @@ textarea {
     font-size: 13px;
   }
 
+  /* seccion proyectos */
+
   .proyecto a img {
     height: 90px;
     width: 150px;
@@ -466,6 +479,8 @@ textarea {
     padding: 10px;
     font-size: 15px;
   }
+
+  /* seccion habilidades */
 
   .habilidades-cont {
     display: grid;
@@ -482,6 +497,8 @@ textarea {
     padding: 10px;
     margin-left: 50px;
   }
+
+  /* seccion contacto */
 
   .contact-form {
     padding: 30px;
