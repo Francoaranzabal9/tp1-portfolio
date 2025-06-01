@@ -109,6 +109,9 @@ a img {
 .sobre-mi h1 {
   margin-bottom: 40px;
   color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.137);
+  border-radius: 12px;
+  padding: 30px;
 }
 
 .sobre-mi {
@@ -142,9 +145,11 @@ a img {
 
 .cart p,
 li {
-  color: rgba(245, 245, 245, 0.523);
+  color: rgb(187, 184, 184);
   text-align: center;
 }
+
+.cart li {}
 
 /* estilos proyectos y trabajos */
 
@@ -301,19 +306,31 @@ li {
 .contact-form h4 {
   font-size: 30px;
   text-align: center;
-  color: whitesmoke
+  color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.137);
+  border-radius: 12px;
+  padding: 10px;
 }
 
 .contact-form h5 {
   text-align: center;
   margin-bottom: 50px;
   color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.137);
+  border-radius: 12px;
+  padding: 10px;
 }
 
 input {
-  border: 2px solid rgb(65, 64, 64);
+  border: 2px solid rgb(128, 126, 126);
   background-color: transparent;
   color: whitesmoke;
+}
+
+.form-cont {
+  background-color: rgba(128, 128, 128, 0.137);
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .nombre-apellido-cont {
@@ -354,7 +371,7 @@ button {
 }
 
 textarea {
-  border: 2px solid rgb(65, 64, 64);
+  border: 2px solid rgb(128, 126, 126);
   color: whitesmoke;
   background-color: transparent;
   width: 100%;
@@ -481,7 +498,6 @@ textarea {
   }
 
   /* seccion habilidades */
-
   .habilidades-cont {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
