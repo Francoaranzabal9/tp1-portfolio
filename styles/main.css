@@ -180,8 +180,8 @@ li {
 }
 
 .proyecto a img {
-  height: 250px;
-  width: 500px;
+  height: 200px;
+  width: 400px;
   filter: brightness(0.5);
 }
 
