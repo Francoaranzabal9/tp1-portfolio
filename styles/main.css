@@ -44,7 +44,7 @@ header {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: clamp(1.8rem, calc(10vw + 1rem), 3rem);
   color: white;
   margin-bottom: 10px;
   margin-left: 300px;
@@ -58,13 +58,10 @@ header {
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: clamp(1rem, 5vw, 1.1rem);
   margin-bottom: 5px;
   color: rgb(209, 206, 206);
   margin-left: 300px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(30, end) 1
 }
 
 .hero a {
@@ -78,17 +75,6 @@ header {
 .hero a:hover img {
   scale: 1.1;
 }
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
 
 /*estilo-de-contactos*/
 
