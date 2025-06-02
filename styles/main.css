@@ -39,7 +39,7 @@ header {
   justify-content: center;
   background-image: url(/assets/images/hero-img.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 100dvh;
   padding: 20px;
 }
 
@@ -93,6 +93,7 @@ a img {
 /*estilos-about-me*/
 
 .sobre-mi h1 {
+  font-size: clamp(1.8rem, calc(10vw + 1rem), 3rem);
   margin-bottom: 40px;
   color: whitesmoke;
   background-color: rgba(128, 128, 128, 0.137);
@@ -106,7 +107,7 @@ a img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   padding: 20px;
 }
 
@@ -146,14 +147,13 @@ li {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   padding: 20px;
   background-image: url(/assets/images/space-background.jpg);
 }
 
 .proyectos h1 {
-  font-size: 40px;
-  margin-bottom: 40px;
+  font-size: clamp(1.8rem, calc(10vw + 1rem), 3rem);
   color: whitesmoke;
   background-color: rgba(128, 128, 128, 0.137);
   border-radius: 12px;
@@ -191,13 +191,12 @@ li {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   padding: 20px;
 }
 
 .habilidades h1 {
-  font-size: 50px;
-  margin-top: 70px;
+  font-size: clamp(1rem, calc(7vw + 1rem), 3rem);
   color: whitesmoke;
   background-color: rgba(128, 128, 128, 0.137);
   border-radius: 12px;
@@ -211,14 +210,13 @@ li {
 
 .habilidades-cont {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;
-  margin-left: 130px;
 }
 
 .progreso-cont {
   background-color: rgba(128, 128, 128, 0.281);
-  width: 100%;
+  max-width: 100%;
   height: 40px;
   border-radius: 12px;
 }
@@ -229,7 +227,7 @@ li {
 .progreso-python {
   height: 100%;
   border-radius: 12px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,7 +266,7 @@ li {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   padding: 20px;
   background-image: url(/assets/images/space-background.jpg);
 }
@@ -410,32 +408,47 @@ footer a:hover {
     margin-left: 100px;
   }
 
+  /* seccion about me */
+
+  .sobre-mi-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
   /* seccion proyectos */
 
   .proyecto a img {
-    height: 150px;
-    width: 250px;
+    height: 90px;
+    width: 150px;
   }
 
   .proyectos h1 {
     color: whitesmoke;
     background-color: rgba(128, 128, 128, 0.137);
     border-radius: 12px;
-    padding: 40px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   /* seccion habilidades */
 
-  .habilidades-cont {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 10px;
-    margin-left: 130px;
+  .habilidades h1 {
+    font-size: 20px;
   }
 
-  .habilidades h1 {
-    font-size: 40px;
+  .habilidades-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 10px;
+  }
+
+  .habilidad {
+    max-width: 80%;
+  }
+
+  .progreso-cont {
+    max-width: 80%;
+    height: 20px;
   }
 
   /* seccion contacto */
@@ -443,10 +456,23 @@ footer a:hover {
   .contact-img {
     display: flex;
     justify-content: center;
-    height: 75%;
-    width: 75%;
-    padding: 50px;
+    height: 70%;
+    max-width: 45%;
   }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .contact-form h4 {
+    font-size: 17px;
+  }
+
+  .contact-form h5 {
+    font-size: 13px;
+  }
+
+  .form-cont {}
 }
 
 @media (max-width: 480px) {
@@ -512,18 +538,12 @@ footer a:hover {
   /* seccion habilidades */
   .habilidades-cont {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     gap: 10px;
   }
 
   .habilidades h1 {
-    font-size: 20px;
-    padding: 10px;
-  }
-
-  .habilidades-cont {
-    padding: 10px;
-    margin-left: 50px;
+    font-size: 10px;
   }
 
   /* seccion contacto */
